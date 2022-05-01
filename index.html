@@ -217,15 +217,15 @@
     </div>
     <!--hôp buy-->
     <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')<!--Đặt biến buyBtns cho js-buy-ticket và lấy toàn bộ 3 nút-->
-        const modal = document.querySelector('.js-modal') <!--đặt biến và lấy 1 nút modal-->
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')//Đặt biến buyBtns cho js-buy-ticket và lấy toàn bộ 3 nút-->
+        const modal = document.querySelector('.js-modal') //đặt biến và lấy 1 nút modal
         const modalContainer = document.querySelector('.js-modal-container')
         const modalClose = document.querySelector('.js-modal-close')
          
         // Hàm hiển thị modal mua vé (thêm class open vào modal)
         function showBuyTickets() {
             modal.classList.add('open')
-        }  <!-- tạo hàm -->
+        }  //tạo hàm 
 
          // Hàm ẩn modal mua vé (gỡ class open của modal)
         function hideBuyTickets() {
@@ -235,7 +235,7 @@
         // lập qua từng thẻ button và nghe hành vi click
         for (const buyBtn of buyBtns) {
             buyBtn.addEventListener('click', showBuyTickets)
-        }   <!--tạo vòng lặp lick vào để mở -->
+        }   //tạo vòng lặp lick vào để mở 
 
         // nghe hành vi click vào button close
         modalClose.addEventListener('click', hideBuyTickets)
@@ -281,6 +281,8 @@
 
     
     </script>
+
+   
 </body>
 
 </html>
